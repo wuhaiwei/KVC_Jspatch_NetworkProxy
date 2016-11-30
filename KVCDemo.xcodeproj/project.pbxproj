@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56F19053004A3A9E249E6383 /* libPods-KVCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C4708603089BEDF959CC4 /* libPods-KVCDemo.a */; };
 		FDC118D21DEC30D300F68C19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC118D11DEC30D300F68C19 /* main.m */; };
 		FDC118D51DEC30D300F68C19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC118D41DEC30D300F68C19 /* AppDelegate.m */; };
 		FDC118D81DEC30D300F68C19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC118D71DEC30D300F68C19 /* ViewController.m */; };
 		FDC118DB1DEC30D300F68C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC118D91DEC30D300F68C19 /* Main.storyboard */; };
 		FDC118DD1DEC30D300F68C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC118DC1DEC30D300F68C19 /* Assets.xcassets */; };
 		FDC118E01DEC30D300F68C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC118DE1DEC30D300F68C19 /* LaunchScreen.storyboard */; };
+		FDC118E91DEC31A700F68C19 /* KVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC118E81DEC31A700F68C19 /* KVCModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60920B43E7B271280887EAB7 /* Pods-KVCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KVCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KVCDemo/Pods-KVCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AB280520E66678DEB6A8ADD9 /* Pods-KVCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KVCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KVCDemo/Pods-KVCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B20C4708603089BEDF959CC4 /* libPods-KVCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KVCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC118CD1DEC30D300F68C19 /* KVCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC118D11DEC30D300F68C19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDC118D31DEC30D300F68C19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,8 @@
 		FDC118DC1DEC30D300F68C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDC118DF1DEC30D300F68C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDC118E11DEC30D300F68C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC118E71DEC31A700F68C19 /* KVCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCModel.h; sourceTree = "<group>"; };
+		FDC118E81DEC31A700F68C19 /* KVCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F19053004A3A9E249E6383 /* libPods-KVCDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8682FA3F711557124342ABE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20C4708603089BEDF959CC4 /* libPods-KVCDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B46C190ED7F1A8B4DE893ED8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB280520E66678DEB6A8ADD9 /* Pods-KVCDemo.debug.xcconfig */,
+				60920B43E7B271280887EAB7 /* Pods-KVCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FDC118C41DEC30D300F68C19 = {
 			isa = PBXGroup;
 			children = (
 				FDC118CF1DEC30D300F68C19 /* KVCDemo */,
 				FDC118CE1DEC30D300F68C19 /* Products */,
+				B46C190ED7F1A8B4DE893ED8 /* Pods */,
+				8682FA3F711557124342ABE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +89,8 @@
 				FDC118D41DEC30D300F68C19 /* AppDelegate.m */,
 				FDC118D61DEC30D300F68C19 /* ViewController.h */,
 				FDC118D71DEC30D300F68C19 /* ViewController.m */,
+				FDC118E71DEC31A700F68C19 /* KVCModel.h */,
+				FDC118E81DEC31A700F68C19 /* KVCModel.m */,
 				FDC118D91DEC30D300F68C19 /* Main.storyboard */,
 				FDC118DC1DEC30D300F68C19 /* Assets.xcassets */,
 				FDC118DE1DEC30D300F68C19 /* LaunchScreen.storyboard */,
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDC118E41DEC30D300F68C19 /* Build configuration list for PBXNativeTarget "KVCDemo" */;
 			buildPhases = (
+				1D1BFC8188C3C68B94DFA35C /* [CP] Check Pods Manifest.lock */,
 				FDC118C91DEC30D300F68C19 /* Sources */,
 				FDC118CA1DEC30D300F68C19 /* Frameworks */,
 				FDC118CB1DEC30D300F68C19 /* Resources */,
+				F799165677B158CD17BBE8C9 /* [CP] Embed Pods Frameworks */,
+				A3A84F16A099D7E94559230E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +178,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D1BFC8188C3C68B94DFA35C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3A84F16A099D7E94559230E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KVCDemo/Pods-KVCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F799165677B158CD17BBE8C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KVCDemo/Pods-KVCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDC118C91DEC30D300F68C19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,6 +233,7 @@
 			files = (
 				FDC118D81DEC30D300F68C19 /* ViewController.m in Sources */,
 				FDC118D51DEC30D300F68C19 /* AppDelegate.m in Sources */,
+				FDC118E91DEC31A700F68C19 /* KVCModel.m in Sources */,
 				FDC118D21DEC30D300F68C19 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +350,7 @@
 		};
 		FDC118E51DEC30D300F68C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB280520E66678DEB6A8ADD9 /* Pods-KVCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SX8PGCDPTD;
@@ -281,6 +363,7 @@
 		};
 		FDC118E61DEC30D300F68C19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60920B43E7B271280887EAB7 /* Pods-KVCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SX8PGCDPTD;
@@ -310,6 +393,7 @@
 				FDC118E61DEC30D300F68C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

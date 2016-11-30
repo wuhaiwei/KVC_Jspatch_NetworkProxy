@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <JSPatch/JPEngine.h>
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //测试热修复
+    [self testJSPatchHotFix];
     return YES;
+}
+
+- (void)testJSPatchHotFix
+{
+    [JPEngine startEngine];
+    [JPEngine evaluateScript:@"\
+     var alertView = require('UIAlertView').alloc().init();\
+     alertView.setTitle('Alert');\
+     alertView.setMessage('AlertView from js'); \
+     alertView.addButtonWithTitle('OK');\
+     alertView.show(); \
+     "];
+    
+    //重写闪退的方法
+    [JPEngine evaluateScript:@"defineClass('ViewController',{\
+     crashAction: function(crashButton){\
+     var redColor = require('UIColor').redColor();\
+     crashButton.setBackgroundColor(redColor);\
+     }\
+     },{})"];
 }
 
 
